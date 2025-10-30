@@ -11984,74 +11984,43 @@ li.subtitle-puretillo2 a:hover {
     text-align: center;
 }
 /* ===========================
-   Easter Egg limpio
+   Easter Egg limpio y fijo
    =========================== */
+/* ===== Easter Egg fijo, sin afectar layout ===== */
 .easter-egg {
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    z-index: 9999;
+    position: fixed;     /* siempre encima del contenido */
+    bottom: 15px;        /* distancia desde abajo */
+    right: 15px;         /* distancia desde derecha */
+    z-index: 9999;       /* encima de todo */
     display: block;
     pointer-events: auto;
 }
 
 .easter-egg img {
-    width: 35px;
+    display: block;
+    width: 40px;        /* tamaño fijo */
     height: auto;
+    max-width: none;    /* evita que crezca con zoom */
     border-radius: 10px;
-    opacity: 0.5; /* opacidad inicial */
+    opacity: 0.3;
     transition: all 0.35s ease;
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
 }
 
-/* Al pasar el mouse (solo PC) */
+/* Hover */
 .easter-egg:hover img {
-    opacity: 0.9;
-    transform: scale(1.05);
+    opacity: 1;
+    transform: scale(1.1);
 }
 
-/* Al hacer scroll */
-.easter-egg.scrolled img {
-    opacity: 0.7;
-    width: 28px;
-}
-
-/* Tablets y móviles */
+/* Responsive */
 @media (max-width: 768px) {
-    .easter-egg img {
-        width: 40px;
-        opacity: 0.5; /* se mantiene opaca en móvil */
-    }
-    .easter-egg.scrolled img {
-        width: 32px;
-        opacity: 0.7;
-    }
-}
-
-/* Teléfonos muy pequeños */
-@media (max-width: 480px) {
-    .easter-egg img {
-        width: 25px;
-        opacity: 0.5; /* opacidad inicial */
-    }
-    .easter-egg.scrolled img {
-        width: 22px;
-        opacity: 0.7;
-    }
-}
-#btn-confetti {
-    margin-top: 10px; /* distancia en escritorio */
-}
-
-@media (max-width: 768px) {
-    #btn-confetti {
-        margin-top: 30px; /* distancia menor en tabletas/móviles */
-    }
+    .easter-egg img { width: 50px; }
 }
 
 @media (max-width: 480px) {
-    #btn-confetti {
-        margin-top: 20px; /* distancia en teléfonos muy pequeños */
-    }
+    .easter-egg img { width: 40px; }
 }
+
+/* Evita scroll horizontal causado por el Easter Egg */
+body { overflow-x: hidden; }
+
