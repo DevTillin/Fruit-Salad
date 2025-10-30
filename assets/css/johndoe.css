@@ -12034,3 +12034,7 @@ body { overflow-x: hidden; }
     height: auto;
     max-width: 60px;
 }
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
