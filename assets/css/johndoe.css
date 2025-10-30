@@ -12062,4 +12062,31 @@ li.subtitle-puretillo2 a:hover {
         font-size: 24px;
     }
 }
+/* Easter egg responsive */
+.easter-egg img {
+    width: 90px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    .easter-egg img {
+        width: 55px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* Teléfonos muy pequeños */
+@media (max-width: 480px) {
+    .easter-egg img {
+        width: 45px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
 
