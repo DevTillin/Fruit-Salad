@@ -12060,3 +12060,64 @@ body { overflow-x: hidden; }
     max-width: 50%;
   }
 }
+/* Ajustes móviles */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 32px;
+    }
+
+    .header-subtitle, .header-mono {
+        font-size: 16px;
+    }
+
+    .navbar-brand img, .brand-img {
+        width: 45px;
+        height: auto;
+    }
+
+    .about-card {
+        margin-bottom: 25px;
+    }
+
+    .producto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .producto-img, .producto-img2 {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .producto-info {
+        margin-bottom: 15px;
+    }
+
+    .organigrama-img {
+        width: 90%;
+        height: auto;
+    }
+
+    .easter-egg img {
+        width: 60px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* Para celulares chicos */
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 26px;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .productos-titulo {
+        font-size: 24px;
+    }
+}
+
