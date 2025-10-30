@@ -12034,7 +12034,29 @@ body { overflow-x: hidden; }
     height: auto;
     max-width: 60px;
 }
-body, html {
-    max-width: 100%;
-    overflow-x: hidden;
+  
+  /* Ajustar tamaños de fuente en móviles */
+  h1, h2, h3 {
+    font-size: calc(1.5rem + (2 - 1.5) * ((100vw - 300px) / (767 - 300))); /* Escalar fuentes */
+  }
+  
+  p {
+    font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (767 - 300))); /* Escalar párrafos */
+  }
+}
+/* Adaptaciones para tablets (pantallas entre 768px y 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Ajustes ligeros para tablets */
+  .header {
+    height: 70vh; /* Altura intermedia */
+  }
+  
+  .about-section .about-card {
+    margin-bottom: 20px;
+  }
+  
+  .section.bg-dark .row .col-md-6 {
+    flex: 0 0 50%; /* Dos columnas en tablets */
+    max-width: 50%;
+  }
 }
