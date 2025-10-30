@@ -12024,3 +12024,13 @@ li.subtitle-puretillo2 a:hover {
 /* Evita scroll horizontal causado por el Easter Egg */
 body { overflow-x: hidden; }
 
+.easter-egg {
+    display: block;
+    margin: 20px auto 0; /* Centrado y un poco de espacio arriba */
+}
+
+.easter-egg img {
+    width: 35px;
+    height: auto;
+    max-width: 60px;
+}
