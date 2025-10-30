@@ -12089,4 +12089,47 @@ li.subtitle-puretillo2 a:hover {
         right: 10px;
     }
 }
+/* Estado inicial */
+.easter-egg img {
+    width: 80px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 10px;
+    z-index: 9999;
+    transition: all 0.35s ease;
+}
+
+/* Estado cuando se hace scroll */
+.easter-egg.scrolled img {
+    width: 60px;
+    opacity: .7;
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+    .easter-egg img {
+        width: 55px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .easter-egg.scrolled img {
+        width: 40px;
+        opacity: .7;
+    }
+}
+
+/* Teléfonos muy pequeños */
+@media (max-width: 480px) {
+    .easter-egg img {
+        width: 45px;
+        bottom: 10px;
+        right: 10px;
+    }
+    .easter-egg.scrolled img {
+        width: 35px;
+        opacity: .7;
+    }
+}
+
 
