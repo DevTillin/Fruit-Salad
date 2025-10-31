@@ -12002,13 +12002,13 @@ li.subtitle-puretillo2 a:hover {
     height: auto;
     max-width: none;    /* evita que crezca con zoom */
     border-radius: 10px;
-    opacity: 0.3;
+    opacity: 10;
     transition: all 0.35s ease;
 }
 
 /* Hover */
 .easter-egg:hover img {
-    opacity: 1;
+    opacity: 10;
     transform: scale(1.1);
 }
 
