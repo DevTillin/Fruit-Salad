@@ -12115,4 +12115,12 @@ body { overflow-x: hidden; }
         font-size: 24px;
     }
 }
+.organigrama-img {
+    width: 100%;
+    max-width: 900px; /* podés cambiarlo si querés */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 
