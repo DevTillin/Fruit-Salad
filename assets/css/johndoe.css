@@ -11998,7 +11998,7 @@ li.subtitle-puretillo2 a:hover {
 
 .easter-egg img {
     display: block;
-    width: 40px;        /* tamaño fijo */
+    width: 20px;        /* tamaño fijo */
     height: auto;
     max-width: none;    /* evita que crezca con zoom */
     border-radius: 10px;
